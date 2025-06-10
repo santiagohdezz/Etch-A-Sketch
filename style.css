@@ -1,18 +1,27 @@
-#contenedor {
+body {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#botonCuadricula {
+    margin-bottom: 20px;
+}
+
+#contenedor {
+    display: grid;
     flex-wrap: wrap;
-    width: 400px;
-    height: 400px;
+    width: 80vw;
+    height: 80vw;
+    max-width: 600px; 
+    max-height: 600px;
     border: 2px solid black;
+    box-sizing: border-box;
 }
 
 .caja {
-    width: 25px;
-    height: 25px;
     box-sizing: border-box;
     border: 1px solid black;
 }
 
-.caja:hover {
-    background-color: aqua;
-}
